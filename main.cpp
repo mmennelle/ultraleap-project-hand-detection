@@ -30,7 +30,7 @@ void processTrackingEvent(const LEAP_TRACKING_EVENT* trackingEvent, std::ofstrea
 }
 
 int main() {
-    // Open the log file
+    // Open the log file "tracking_data.log"
     std::ofstream logFile("tracking_data.log");
     if (!logFile.is_open()) {
         std::cerr << "Failed to open log file" << std::endl;
